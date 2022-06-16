@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #565656;
+
+        }
+        #container{
+            width: 60%;
+           
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 1fr;
+            
+            margin-top: 100px;
+            gap: 50px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+       
+        input{
+            display: block;
+            width: 90%;
+            height: 30px;
+            font-size: 20px;
+            border: 0;
+            outline: 0;
+           
+        }
+        h1{
+            font-family: Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+        }
+       
+        hr{
+            margin-top: -3px;
+            
+        }
+        #container>div:nth-child(2){
+            padding: 30px;
+        }
+        
+        #d2{
+           margin-top: 70px;
+        }
+        #d1{
+            margin-top: 50px;
+        }
+        button{
+            display: block;
+            width: 100%;
+            height: 40px;
+            margin-top: 30px;
+            background-color:  rgb(255, 111, 97);
+            color: white;
+            font-weight: 700;
+            font-size: 16px;
+            border: 1px solid rgb(255, 111, 97);
+            border-radius: 5px;
+            font-family: Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+            cursor: pointer;
+        }
+        #p1{
+            color: #616161;
+           
+            font-weight: 400;
+            font-family: Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+        }
+        #p2{
+            color: #616161; 
+            font-weight: 400;
+            font-size: 18px;
+            font-family: Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+        }
+        a{
+            color: rgb(255, 111, 97);;
+        }
+      img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div><img src="https://i.im.ge/2022/06/16/rnxAdW.png" alt=""></div>
+        <div><div id="card2"><h1>Sign Up</h1>
+            <p id="p1">Please enter your email and password</p><div id="d1"><input id="email" type="email" placeholder="Enter Email Address">
+                <hr style="border: 1px solid red; background-color: red;"></div>
+                <div id="d2"><input id="pass" type="password" placeholder="Enter New Password">
+                    <hr style="border: 1px solid red; background-color: red;"></div>
+            
+            
+            <button >CONTINUE</button></div>
+            <p id="p2" style="text-align: center">Have an account ? <a href="">Login</a> </p>
+            <p style="text-align: center; color: #616161;">By signing up, you agree to our
+                Terms and Conditions & Privacy Policy</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector("button").addEventListener("click",myFunction);
+    
+    let data=[];
+
+    function myFunction(){
+        let email=document.querySelector("#email").value;
+        let password=document.querySelector("#pass").value;
+        let obj={};
+        obj.uEmail=email;
+        obj.uPassword=password;
+        data.push(obj);
+        localStorage.setItem("userData",JSON.stringify(data));
+       
+    }
+
+
+</script>
