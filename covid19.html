@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+    #comb{
+        background-color: #FDF0DF;
+        max-width: 100%;
+        
+        
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: space-between;
+        padding: 30px 100px;
+        gap:20px;
+        margin: -10px ;
+
+    }
+   
+   .minicont{
+    font-size: 1.25vw;
+    padding-top: 8px;
+    line-height: 1.4;
+    color: #767676;
+   
+    font-family: 'Poppins', sans-serif;
+   }
+   .headers{
+    font-size: 2.6vw;
+    font-weight: 700;
+    line-height: 1.4;
+    padding-top: 8px;
+    color: #3b3b3b;
+   
+    font-family: 'Poppins', sans-serif;
+   }
+   #img1>img{
+    max-width: 95%;
+    margin: auto;
+    display: block;
+    width: 100%;
+   }
+   #rtpcr{
+    width: 80%;
+    
+    
+    margin: auto;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+    background-color: #FDF0DF;
+    justify-content: space-around;
+    border-radius: 10px;
+    
+   }
+  
+   .header2{
+    font-size: 2.2vw;
+    padding: 0 0 0 2vw;
+    color: #3b3b3b;
+    font-weight: 700;
+    line-height: 1.4;
+    font-family: 'Poppins',sans-serif;
+   }
+   .someContent{
+    font-size: 1.8vw;
+    padding: 0 0 0 2vw;
+    color: #3b3b3b;
+    font-family: 'Poppins',sans-serif;
+   }
+   #btn1{
+    padding: 0 0 0 2vw;
+    margin-top: 20px;
+    width: 50%;
+   
+    margin-bottom: 30px;
+    
+   }
+   #btn1>a>button{
+    width: 75%;
+    height: 50px;
+    background-color: #ff6f61;
+    font-size: 1.3vw;
+    color: white;
+    border: transparent;
+    font-weight: 600;
+    border-radius: 5px;
+    
+   }
+   #btn1>a>button:hover{
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    cursor: pointer;
+   }
+   #essentials{
+    width: 80%;
+    
+   
+    margin: auto;
+    margin-top: 60px;
+   
+   }
+   #items{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,400px);
+    gap: 60px 40px;
+   }
+  
+   #items>div>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+   
+   }
+   #items>div>img:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    cursor: pointer;
+   }
+   #manageCards{
+    width: 80%;
+    margin: auto;
+    
+   
+    margin-top: 50px;
+   }
+#cardCont{
+   
+    width: 98%;
+    
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 18px;
+    padding: 10px; 
+    margin: auto;
+}
+#cardCont>div{
+      
+       padding: 0 20px;
+       border-radius: 10px;
+}
+#card1{
+    background-color: #FBEAF0;
+    
+    
+}
+
+#card1head{
+    color: #993859;
+    font-size: 1.8vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.4;
+    font-family: 'Poppins' , sans-serif;
+    margin-top: 20px;
+}
+.hrcard{
+    border: 2px solid #993859;
+    color: #993859;
+    background-color: #993859;
+    margin: 0.5vw 0 1vw 0;
+}
+.cardpara{
+    font-size: 1.1vw;
+    line-height: 1.4;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cardhr2{
+    border: 0.8px solid #993859;
+    color: #993859;
+    background-color: #993859;
+    margin: 1vw 0 1vw 0;
+}
+.cardsubhead{
+    font-size: 1.3vw;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-top: 0.5vw;
+    font-family: 'Poppins',sans-serif;
+}
+.cardul{
+    margin-top: 0.6vw;
+    font-size: 1.1vw ;
+    list-style-type: disc;
+    margin-left: 1.4vw;
+    font-family: 'Poppins',sans-serif;
+    margin-left: -20px;
+    
+}
+.cardli{
+    font-size: 1vw ;
+    padding-top: 0.3vw;
+    margin-bottom: 5px;
+}
+.cardbook{
+    border-radius: 0 0 8px 8px;
+    font-size: 1.5vw;
+    padding: 1vw 1.5vw;
+    
+   
+    width: 100%;
+    color: #fff ;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.5vw;
+    font-family: 'Poppins' sans-serif;
+    text-decoration: none;
+    font-weight: 600 ;
+    
+    
+}
+#choice{
+    padding: 1vw 2vw 2vw 2vw;
+    background-color: #FDEDBE;
+    border-radius: 12px;
+    max-width: 75%;
+    margin: auto;
+    margin-bottom: 4vw;
+    margin-top: 20px;
+}
+#choice>div{
+    font-size: 1.2vw;
+    color: #72582e;
+    margin-top: 0.5vw;
+    font-family: 'Poppins', sans-serif;
+}
+#prepare{
+   
+    
+    max-width: 100%;
+    background-color: #FEF7EF;
+   margin: auto;
+    margin-left: -10px;
+    margin-right: -10px;
+   
+}
+#prepare>div{
+    width: 75%;
+    margin: auto;
+   
+}
+
+#prepare>div>h2{
+    font-size: 2.6vw;
+    font-weight: 700;
+    line-height: 1.4;
+    padding-top: 8px;
+    color: #3b3b3b;
+    font-family: 'Poppins',sans-serif;
+}
+#prepare>div>div{
+    font-size: 1.25vw;
+    padding-top: 8px;
+    line-height: 1.4;
+    color: #767676;
+    font-family: 'Poppins',sans-serif;
+  
+   margin-top: -20px;
+}
+
+.btn2{
+    width: 25%;
+    height: 40px;
+    background-color: #ff6f61;;
+    color: white;
+    border: transparent;
+    border-radius: 5px ;
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+.btn2:hover{
+    color:black;
+    cursor: pointer;
+}
+
+#ebook>#ebookCont{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:auto;
+    gap: 20px;
+
+}
+
+#ebook>#ebookCont>div>img{
+    width: 100%;
+    height: 500px;
+
+
+}
+
+
+#show{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.5vw;
+    padding-bottom: 1vw;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+#show:hover{
+    color: orange;
+}
+#modal{
+    margin: auto;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color:#fff0e3;
+    
+    
+    margin-left: 175px;
+    margin-top: 60px;
+    border-radius: 10px;
+   
+}
+
+.someCont{
+    font-size: 1.25vw;
+    padding-top: 8px;
+    line-height: 1.4;
+    color: #767676;
+    padding-left: 2vw;
+    font-family: 'Poppins',sans-serif;
+    margin-top: -20px;
+
+}
+#antiBodies{
+    margin: auto;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    
+    background-color:#fff0e3;
+    
+    
+    margin-left: 175px;
+    margin-top: 60px;
+    border-radius: 10px;
+
+}
+#guidance{
+    margin: auto;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    
+    background-color:#fff0e3;
+    
+    
+    margin-left: 175px;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+#yout{
+    margin: auto;
+    width: 75%;
+    background-color:#fff0e3;
+    
+    
+    margin-left: 175px;
+    margin-top: 60px;
+    border-radius: 10px;
+    
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+#ytcont{
+   width: 93%;
+  
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-template-rows: repeat(2,300px);
+   gap: 20px;
+}
+#consult{
+    margin: auto;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    gap: 30px;
+    
+    background-color:#fff0e3;
+    
+    
+    margin-left: 175px;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+#refer{
+    font-size: 14px;
+    max-width: 84%;
+   margin-left: 180px;
+    padding-top: 3vw;
+    padding-bottom: 2vw;
+    font-family: 'Poppins',sans-serif;
+}
+.cardbook:hover{
+    cursor: pointer;
+    color: orange;
+}
+  </style>
+</head>
+<body>
+    <div id="comb">
+        <div>
+            <h1 class="headers">
+                Combating corona virus in India
+            </h1>
+            <div class="minicont" style="margin-top: -20px;">
+                As we are staring at a potential rise of coronavirus in India, <span style="font-weight: 600;
+                color: #3b3b3b;">testing, tracing</span>  and <span style="font-weight: 600;
+                color: #3b3b3b;">treating</span> is the ideal way of curbing this spread. Testing on time helps provide early treatment which, in turn, prevents the spread to your loved ones and others around you.
+            </div>
+            <hr style="background-color: black; border: 1px solid black">
+            <div class="minicont" style="font-weight:600;">
+                Experiencing COVID-like symptoms? To book a COVID-19 test at home, call on
+            </div  >
+            <h1 class="headers"  style=" margin-top:-4px">
+                1800-212-2353
+            </h1>
+            
+        </div>
+        <div id="img1">
+            <img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/img-head.png" alt="girlImg">
+
+        </div>
+
+
+       
+    </div>
+
+    <div id="rtpcr">
+        <div >
+            <h2 class="header2">COVID-19 RT-PCR test</h2>
+            <div class="someContent" style="width: 80%; margin-top: -10px;">
+                Gold standard test to detect active coronavirus infection
+            </div>
+            <div id="btn1"><a href=""><button>BOOK NOW</button></a></div>
+        </div>
+        <div>
+            <img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/rtpcr.png" 
+           style="width: 100%; height: 100%;" alt="test">
+        </div>
+    </div>
+
+    <div id="essentials">
+        <h2 class="header2" style="padding: 0 0 0 0;">Covid essentials everything you need</h2>
+        <div id="items"><div><img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/cold-cough.png" alt=""></div>
+        <div><img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/track-your-vitals.png" alt=""></div>
+        <div><img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/hand-wash.png" alt=""></div>
+        <div><img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/mask&face.png" alt=""></div>
+        <div><img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/immunity.png" alt=""></div>
+        <div><img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/disinfectants.png" alt=""></div></div>
+        
+    </div>
+
+    <div id="manageCards">
+        <h2 class="header2" style="padding: 0 0 0 0;">COVID Management & Home Care Tests</h2>
+        <div id="cardCont">
+            <div id="card1">
+                <div id="card1head">COVID Antibody IgG (Quantitative)</div>
+                <hr class="hrcard">
+                <div class="cardpara" style="color: #993859;">The Antibody Test detects any past occurrence of the infection by looking for COVID-19 antibodies 
+                </div>
+                <hr class="cardhr2"> 
+                <div class="cardsubhead" style="color:#993859;">Who should take the test ?</div>
+                <ul class="cardul" style="color:#993859;">
+                    <li class="cardli">Think you contracted the coronavirus in the past and have already recovered</li>
+                    <li class="cardli">Want to know if your body has encountered the infection and made antibodies against the coronavirus</li>
+                    <li class="cardli" style="margin-bottom: 100px;">Have recovered from COVID-19 and want to help people who need plasma therapy</li>
+                </ul>
+                <div class="cardbook" style="background-color:#993859; margin-left: -20px; width: 99%;">BOOK NOW ></div>
+            </div>
+            <div style="background-color: #EFFFF5; color: #4B5E4C;"><div id="card1head">Covid Home Care Essential</div>
+            <hr class="hrcard">
+            <div class="cardpara" style="color: #993859;">The COVID Home Care Essential package offers 33 tests (Includes CRP, CBC with NLR, ESR, BUN and more) that give important clues about the various health parameters.
+
+            </div>
+            <hr class="cardhr2"> 
+            <div class="cardsubhead" style="color:#993859;">This test is recommended if you:</div>
+            <ul class="cardul" style="color:#993859;">
+                <li class="cardli">Have been diagnosed with COVID-19 and need to understand how COVID-19 has impacted your health</li>
+                <li class="cardli">Are getting COVID-19 care at home and notice any worsening of the symptoms</li>
+                <li class="cardli" style="margin-bottom: 77px;">Have been advised by the doctor to check your biomarkers</li>
+            </ul>
+            <div class="cardbook" style="background-color:#4B5E4C; margin-left: -20px; width: 99%; ">BOOK NOW ></div></div>
+            <div style="color:#72582e; background-color:#fdedbe"><div id="card1head">COVID Home Care Complete</div>
+            <hr class="hrcard">
+            <div class="cardpara" style="color: #993859;">The COVID Home Care Complete package offers 41 tests (Includes D-Dimer, IL-6, HbA1c, Serum electrolytes, etc., in addition to CRP, CBC with NLR, ESR, and more) that give important clues about the various health parameters.
+            </div>
+            <hr class="cardhr2"> 
+            <div class="cardsubhead" style="color:#993859;">This test is recommended if you:</div>
+            <ul class="cardul" style="color:#993859;">
+                <li class="cardli">Have been diagnosed with COVID-19 and need to understand how COVID-19 has impacted your health</li>
+                <li class="cardli">Are getting COVID-19 care at home and notice any worsening of the symptoms</li>
+                <li class="cardli" style="margin-bottom: 30px;">Have been advised by the doctor to check your biomarkers</li>
+            </ul>
+            <div class="cardbook" style="background-color:#72582e; margin-left: -20px; width: 99%;">BOOK NOW ></div></div>
+        </div>
+    </div>
+   <div id="choice">
+    <img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/1mg-choice-img.svg" alt="choice" style="max-width: 17%;">
+    <div>People with comorbidities such as diabetes and heart disease should opt for <span style="font-weight: 600;">COVID Home Care Complete</span> to cover more biomarkers which allows a nuanced view of their health status.</div>
+   </div>
+
+   <div id="prepare"><div> <h2>Prepare, don't panic</h2>
+       <div>Counter misinformation and keep yourself updated about all COVID-related developments with concise booklets and guides. These guides, compiled by the team of doctors at Tata 1mg, are based on analysis of data by trusted sources such as the WHO, Lancet, National Institute of Communicable Diseases, South Africa, MoHFW & discussions with medical experts.</div>
+       <button class="btn2" style="margin-top: 30px; ">SELECT LANGUAGE </button>
+       
+    </div>
+   
+    <div id="ebook">
+       <div id="ebookCont">
+        <div><img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/Home_isolation_tips_by_Tata_1mg.png" alt="">
+        <button class="btn2" style="width: 100%; margin-top: 30px;">DOWNLOAD E-BOOK</button></div>
+        <div><img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/COVID-Omicron-Tata1mg.png" alt=""><button class="btn2" style="width: 100%; margin-top: 30px;">DOWNLOAD E-BOOK</button></div>
+        <div><img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/Double-masking-tips-by-1mg.png" alt=""><button class="btn2" style="width: 100%; margin-top: 30px;">DOWNLOAD E-BOOK</button></div>
+        
+       
+       </div>
+       <button id="show">SHOW MORE +</button>
+    </div>
+
+    </div>
+
+    <div id="modal">
+        <div>
+            <div><h2 class="header2">COVID-19 & latest treatment modalities</h2></div>
+            <div class="someCont">To prepare for the imminent threats of this virus, scientists and researchers are constantly developing newer treatment strategies. One such new treatment option includes monoclonal antibodies. Want to know more about these available treatments and how they work against COVID variants, including Delta and Omicron?</div>
+           <div style="width: 100%;"><button class="btn2"; style="margin-left:2vw; width:40%; margin-top: 30px;">READ THIS ARTICLE</button></div> 
+        </div>
+        <div>
+            <img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/hand.png" style="width:100%; height:300px" alt="">
+        </div>
+    </div>
+   
+    <div id="antiBodies">
+        <div><div><h2 class="header2">Has your doctor prescribed COVID treatment based on monoclonal antibodies?</h2></div>
+    <div style="width: 100%;"><button class="btn2"; style="margin-left:2vw; width:40%; margin-top: 20px;margin-bottom: 20px;">FIND IT HERE</button></div></div>
+         
+        <div><img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/monoclonal_dweb.png" style="width:100%; height:280px" alt=""></div>
+    </div>
+    
+   <div id="guidance">
+    <div><div><h2 class="header2">Think you may have COVID-19?</h2></div>
+    <div class="someContent">Talk to a qualified doctor online for FREE & get expert guidance</div>
+<div style="width: 100%;"><button class="btn2"; style="margin-left:2vw; width:40%; margin-top: 40px;margin-bottom: 20px;">CALL NOW</button></div></div>
+     
+    <div><img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/talk-now.png" style="width:100%; height:280px" alt=""></div>
+</div>
+
+<div id="yout">
+     <div><h2 class="header2">Watch these detailed videos to get answers to commonly asked questions on coronavirus in India:</h2></div>
+     <div id="ytcont">
+        <div><iframe width="100%" height="300" src="https://www.youtube.com/embed/P4TKxfj3tu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div><iframe width="100%" height="300" src="https://www.youtube.com/embed/UN7fbohf0uw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div><iframe width="100%" height="300" src="https://www.youtube.com/embed/H3H0XCyQgXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div><iframe width="100%" height="300" src="https://www.youtube.com/embed/pso2qbEj0Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+     </div>
+</div>
+
+<div id="consult">
+    <div><div><h2 class="header2">Think you have fever, cold or cough?</h2></div>
+    <div class="someContent">Talk to our experts online</div>
+<div style="width: 100%;"><button class="btn2"; style="margin-left:2vw; width:40%; margin-top: 40px;margin-bottom: 20px;">CONSULT NOW</button></div></div>
+     
+    <div><img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/consult-doc.png" style="width:100%; height:250px" alt=""></div>
+</div>
+
+<div id="refer">
+    Reference:
+    <br>
+    www.mohfw.gov.in/pdf/StatewiseCovidHospitalslink19062020.pdf
+</div>
+   
+</body>
+</html>
