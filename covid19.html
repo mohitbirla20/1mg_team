@@ -6,6 +6,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
   <style>
+    /* navbar css started */
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar style */
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+#midnav{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#midnav>div{
+    cursor: pointer;
+}
+#midnav>div:hover{
+    color: #FF6F61;
+}
+#rightnav{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 20%;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#rightnav>div{
+    cursor: pointer;
+    margin-right: -18%;
+}
+#rightnav>div:hover{
+    color: #FF6F61;
+}
+#rightnav>div>img{
+    width: 60%;
+}
+#leftnav>div>img{
+    width: 100%;
+padding-left: 20px;
+}
+
+
+/* lower navbar */
+#lowernav{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 5px;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+#first>select{
+    background-color: #F1F4F6;
+    padding: 10PX;
+    border: 0px;
+    /* margin-left: 1%; */
+   width: 22%;
+   font-weight: bold;
+}
+#first>input{
+    width: 72%;
+    border: 0px;
+    margin-left: 1%;
+    background-color: #F1F4F6;
+    padding: 10px;
+}
+
+
+#first{
+    display: flex;
+    width: 60%;
+}
+#second{
+    width: 35%;
+}
+#second>span{
+    background-color: #FF6F61;
+    color: white;
+    padding: 10px 25px 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#second>select{
+    font-size: 22px;
+    background-color: #F1F4F6;
+    padding: 7PX;
+    border: 0px;
+    width: 49%;
+}
+
+#lowestnav{
+    width: 100%;
+}
+#lowestnav>select{
+    border: 0px;
+    padding: 5px;
+    cursor: pointer;
+}
+#lowestnav>select:hover{
+    color: #FF6F61;
+    content-visibility: calc();
+}
+
+/* navbar css ended */
+
     #comb{
         background-color: #FDF0DF;
         max-width: 100%;
@@ -417,9 +536,244 @@
     cursor: pointer;
     color: orange;
 }
+/* footer css */
+#upperfooter{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    height: 300px;
+    gap: 30px;
+}
+
+#footer{
+   /* height: 700px; */
+   background-color: #FFFCF8;
+}
+#upperfooter>div{
+    padding: 20px 30px 20px 40px;
+    width: 70%;
+}
+#upperfooter>div>p{
+    margin-top: 8px;
+    color: gray;
+    cursor: pointer;
+}
+#upperfooter>div>h3{
+margin-top: 30px;
+margin-bottom: 20px;
+}
+#upperfooter>div>button{
+    background-color: #FF6F61;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 20px 10px 20px;
+        cursor: pointer;
+        border: 0px;
+        margin-top: 20px;
+        border-radius: 8px;
+}
+#upperfooter>div>img{
+   width: 100%;
+   margin-top: 10px;
+}
+#sociallogo{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+#sociallogo>img{
+    width: 150%;
+    margin-top: 10px;
+}
+
+#midfooter{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+#midfooter>div{
+    display: flex;
+}
+#bottomimg{
+   text-align: center;
+   margin-top: 20px;
+}
+
+#bottomfooter{
+    text-align: center;
+}
+#bottomfooter>p{
+    margin-top: 20px;
+}
+#lastfooter{
+    margin-top: 20px;
+    width: 60%;
+    margin: auto;
+    color: gray;
+    text-align: center;
+    margin-top: 20px;
+}
   </style>
 </head>
 <body>
+    <!-- navbar started -->
+    <div id="navbar">
+        <div id="leftnav">
+            <div><img src="https://www.1mg.com/images/tata_1mg_logo.svg" alt=""></div>
+        </div>
+        <div id="midnav">
+            <div><a href="/labtest.html"></a>MEDICINES</div>
+            <div>LAB TESTS</div>
+            <div>CONSULT DOCTERS</div>
+            <div>COVID-19</div>
+            <div>AYRVEDA</div>
+            <div>CARE PLAN <p>save more</p>
+            </div>
+        </div>
+        <div id="rightnav">
+            <div>Login</div>
+            <div>| Sign Up</div>
+            <div><img src="https://www.1mg.com/images/header/cart-icon-rebrand.svg" alt=""></div>
+            <div>Need Help?</div>
+        </div>
+    </div>
+    <hr>
+    <div id="lowernav">
+        <div id="first">
+            <select id="location">
+                <option value="New Delhi">New Delhi</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Bangalore">Gurgoan</option>
+                <option value="Bangalore">mumbai</option>
+                <option value="Bangalore">Noida</option>
+                <option value="Bangalore">Hydrabad</option>
+                <option value="Bangalore">Ghaziabad</option>
+                <option value="Bangalore">Chennai</option>
+                <option value="Bangalore">Pune</option>
+                <option value="Bangalore">Faridabad</option>
+                <option value="Bangalore">Indore</option>
+                <option value="Bangalore">Jaipur</option>
+                <option value="Bangalore">patna</option>
+                <option value="Bangalore">Agra</option>
+                <option value="Bangalore">Ahmdabad</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Bangalore">Bhopal</option>
+                <option value="Bangalore">Bhubaneshwar</option>
+                <option value="Bangalore">Chandigad</option>
+                <option value="Bangalore">Chennai</option>
+                <option value="Bangalore">Coimbatore</option>
+                <option value="Bangalore">Dehradun</option>
+                <option value="Bangalore">Faridabad</option>
+                <option value="Bangalore">Ghaziabad</option>
+                <option value="Bangalore">Greater Noida</option>
+                <option value="Bangalore">Gurgoan</option>
+                <option value="Bangalore">Howrah</option>
+                <option value="Bangalore">Hydrabad</option>
+                <option value="Bangalore">Mohali</option>
+                <option value="Bangalore">Nagpur</option>
+                <option value="Bangalore">Nashik</option>
+                <option value="Bangalore">Navi Mumbai</option>
+                <option value="Bangalore">New Delhi</option>
+                <option value="Bangalore">Panchkula</option>
+                <option value="Bangalore">patna</option>
+                <option value="Bangalore">Rachi</option>
+                <option value="Bangalore">Surat</option>
+                <option value="Bangalore">Thane</option>
+                <option value="Bangalore">Vadodara</option>
+                <option value="Bangalore">Varanashi</option>
+            </select>
+            <input type="text" placeholder="search for Medicines and health Product">
+        </div>
+
+          <div id="second">
+            QUICK BUY! Get 25% off on medicines*
+            <span>Quick order</span>
+        </div>
+    </div>
+    <hr style="margin-top:5px;">
+
+    <div id="lowestnav">
+      <select id="">
+        <option value="">Health Resource Center</option>
+        <option value="">All Deseases</option>
+        <option value="">All Medicines</option>
+        <option value="">Medicines by Theraputic class</option>
+      </select>
+      <select name="" id="">
+        <option value="">Covid-19 Self test kits
+        </option>
+        <option value="">Oxygen Cans & Concentartors</option>
+        <option value="">Mask</option>
+        <option value="">Sanitizer & Handwash Product</option>
+        <option value="">Support Your Immunity
+        </option>
+        <option value="Thermomete">Tharmometer</option>
+        <option value="">Chyawanprash</option>
+      </select>
+      <select>
+        <option value="">Tata 1mg Health Products</option>
+        <option value="">Summer Essntial</option>
+        <option value="">Trending now</option>
+        <option value="">New Arrivals on Tata 1mg</option>
+        <option value="">Buy More Save More</option>
+        <option value="">Minimum 33% off</option>
+        <option value="">Popular Combo Deals</option>
+      </select>
+      <select name="" id="">
+        <option value="">Vitamins & Nutrition</option>
+        <option value="">Multivitamins</option>
+        <option value="">Vitamins A-Z</option>
+        <option value="">Mineral Suplements</option>
+        <option value="">Vitamin B12 & B Complex</option>
+      </select>
+      <select>
+        <option value="">Diabetes</option>
+        <option value="">Blood Glucose</option>
+        <option value="">Test Strips</option>
+        <option value="">Syringes & Pens</option>
+        <option value="">Homeopathy</option>
+      </select>
+      <select>
+        <option value="">Healthcare Devices</option>
+        <option value="">Neck & Shoulder Support</option>
+        <option value="">Knee & legs Support</option>
+        <option value="">Ankle & Foot Support</option>
+        <option value="">Hand & Wrist Braces</option>
+        <option value="">Arm % Elbow Support</option>
+        <option value="">Cervical Pillows</option>
+        <option value="">Comperisson Support & sleeves</option>
+        <option value="">Heel Support</option>
+      </select>
+      <select>
+        <option value="">Personal Care</option>
+        <option value="">Baby Care</option>
+        <option value="">Baby Diapers</option>
+        <option value="">Nursing & Feeding</option>
+        <option value="">Baby Bath Essential</option>
+        <option value="">Baby Skin care</option>
+        <option value="">Baby Healthcare</option>
+      </select>
+      <select name="" id="">
+     
+            <option value="">Health Condtion</option>
+            <option value="">Stomach Care</option>
+            <option value="">Bone joint & Muscle Care</option>
+            <option value="">Pain Relief</option>
+            <option value="">Heating Aids</option>
+            <option value="">Eye Care</option>
+            <option value="">Eye Lubericants</option>
+            <option value="">Eye Care</option>
+        </option>
+      </select>
+    </div>
+    <hr>
+    <!-- navbar ended -->
     <div id="comb">
         <div>
             <h1 class="headers">
@@ -590,6 +944,91 @@
     Reference:
     <br>
     www.mohfw.gov.in/pdf/StatewiseCovidHospitalslink19062020.pdf
+</div>
+<!-- footer started -->
+
+<div id="footer">
+    <div id="upperfooter">
+    <div>
+        <h3>Know Us</h3>
+        <p>About Us</p>
+        <p>Press Coverage</p>
+        <p>Careers</p>
+        <p>Business</p>
+        <p>Partnership</p>
+        <p>Become a Health partner</p>
+    </div>
+    <div><h3>Our Policies</h3>
+       <p>Privacy Policy</p>
+       <p>Terms and Condition</p>
+       <p>Editorail Policy</p>
+       <p>Return Policy</p>
+       <p>IP Policy</p>
+       <p>Grievance Redressal Policy</p>
+    </div>
+    <div>
+        <h3>Our Services</h3>
+        <p>Order Medicines</p>
+        <p>Book Lab Test</p>
+        <p>Consult a Docter</p>
+        <p>Ayureda Article</p>
+        <p>Hindi Article</p>
+        <p>Care Plan</p>
+    </div>
+    <div>
+        <h3>Connect</h3>
+        <p>Social Links</p>
+        <div id="sociallogo">
+        <img src="https://cdn-icons-png.flaticon.com/128/747/747374.png" alt="">
+        <img src="https://cdn-icons-png.flaticon.com/128/25/25347.png" alt="">
+        <img src="https://cdn-icons-png.flaticon.com/128/1384/1384028.png" alt="">
+        <img src="https://cdn-icons.flaticon.com/png/128/3536/premium/3536569.png?token=exp=1655217871~hmac=ae40271914959caebd3c5701e6bbe059" alt="">
+    </div>
+    <p>What daily dose of health</p>
+    <button>SIGN UP</button>
+    </div>
+    <div>
+        <h3>Download App</h3>
+        <img src="https://onemg.gumlet.io/search_widget/google-badge_3x.png?format=auto" alt="">
+        <img src="https://onemg.gumlet.io/search_widget/appstore-badge_3x.png?format=auto" alt="">
+    </div>
+    </div>
+    <hr>
+
+    <div id="midfooter">
+        <div><img src="https://cdn-icons.flaticon.com/png/128/5267/premium/5267366.png?token=exp=1655218938~hmac=f56e4376d11f23301caef172503a048f" alt="">
+            <div style="margin-left:10px;">
+            <h2>Reliable</h2>
+            <p>All products displayed on Tata 1mg are procured from verified and licensed pharmacies. All labs listed on the platform are accredited</p>
+            </div>
+        </div>
+        <div>
+            <img src="https://cdn-icons.flaticon.com/png/128/2100/premium/2100936.png?token=exp=1655219224~hmac=b21cd3bc42a37047a9b701d3c1b13c95" alt="">
+            <div>
+                <h2>Secure</h2>
+                <p>Tata 1mg uses Secure Sockets Layer (SSL) 128-bit encryption and is Payment Card Industry Data Security Standard (PCI DSS) compliant</p>
+            </div>
+        </div>
+        <div>
+            <img src="https://cdn-icons-png.flaticon.com/128/1611/1611261.png" alt="">
+            <div>
+                <h2>Affordable</h2>
+                <p>Find affordable medicine substitutes, save up to 50% on health products, up to 80% off on lab tests and free doctor consultations</p>
+            </div>
+        </div>
+    </div>
+    <hr style="margin-top: 20px;">
+  <div id="bottomfooter">
+      <div id="bottomimg">
+        <img src="https://static.legitscript.com/seals/729605.png" alt="">
+        <img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1580717209/URS_ebgmxc.png" alt="">
+      </div>
+      <p>India's only LegitScript and ISO/ IEC 27001 certified online healthcare platform</p>
+  </div>
+  <hr style="margin-top: 20px;">
+  <h2 style="margin: 20px 0px 0px 30px;">Know more about Tata 1mg</h2>
+  <hr style="margin-top: 20px;"> 
+  <p id="lastfooter">© 2022 Tata 1mg. All rights reserved. In compliance with Drugs and Cosmetics Act, 1940 and Drugs and Cosmetics Rules, 1945, we don't process requests for Schedule X and other habit forming drugs.</p>
 </div>
    
 </body>
