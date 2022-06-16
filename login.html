@@ -86,46 +86,31 @@
         height: 100%;
         border-radius: 10px;
       }
-      
+      #p3{
+        color: rgb(255, 111, 97);
+        font-weight: 400;
+        font-family: Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+        text-align: center;
+        cursor: pointer;
+      }
     </style>
 </head>
 <body>
     <div id="container">
         <div><img src="https://i.im.ge/2022/06/16/rnxAdW.png" alt=""></div>
-        <div><div id="card2"><h1>Sign Up</h1>
-            <p id="p1">Please enter your email and password</p><div id="d1"><input id="email" type="email" placeholder="Enter Email Address">
+        <div><div id="card2"><h1>Login</h1>
+            <p id="p1">Get access to your orders, lab tests & doctor consultations</p><div id="d1"><input id="email" type="email" placeholder="Enter Email Address">
                 <hr style="border: 1px solid red; background-color: red;"></div>
-                <div id="d2"><input id="pass" type="password" placeholder="Enter New Password">
+                <div id="d2"><input id="pass" type="password" placeholder="Enter Password">
                     <hr style="border: 1px solid red; background-color: red;"></div>
             
             
-            <button >CONTINUE</button></div>
-            <p id="p2" style="text-align: center">Have an account ? <a href="login.html">Login</a> </p>
-            <p style="text-align: center; color: #616161;">By signing up, you agree to our
+            <button >LOGIN</button></div>
+            <p id="p2" style="text-align: center">New on 1mg?  ? <a href="signUp.html">Sign Up</a> </p>
+            <p style="text-align: center; color: #616161;">By logging up, you agree to our
                 Terms and Conditions & Privacy Policy</p>
-              
-
-               
+                <p id="p3">Need Help ? Get In Touch</p>
         </div>
     </div>
 </body>
 </html>
-
-<script>
-    document.querySelector("button").addEventListener("click",myFunction);
-    
-    let data=[];
-
-    function myFunction(){
-        let email=document.querySelector("#email").value;
-        let password=document.querySelector("#pass").value;
-        let obj={};
-        obj.uEmail=email;
-        obj.uPassword=password;
-        data.push(obj);
-        localStorage.setItem("userData",JSON.stringify(data));
-       
-    }
-
-
-</script>
