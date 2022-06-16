@@ -18,16 +18,24 @@
             justify-content: center;
             text-align: center;
             font-weight: bold;
+            background-color: #F1F4F6;
+        }
+
+        #midnav>div>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #midnav>div>a:hover {
+            color: #ff6f61;
         }
 
         #midnav {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
             width: 50%;
+            height: 40px;
             margin: auto;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
         }
 
         #midnav>div {
@@ -37,7 +45,9 @@
         #midnav>div:hover {
             color: #FF6F61;
         }
-
+     #bakckground{
+         background-color: #F1F4F6;;
+     }
         #rightnav {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -77,6 +87,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+            background-color: #F1F4F6;
         }
 
         #first>select {
@@ -130,6 +141,7 @@
             border: 0px;
             padding: 5px;
             cursor: pointer;
+            background-color: #F1F4F6;
         }
 
         #lowestnav>select:hover {
@@ -171,7 +183,7 @@
             font-size: 14px;
             color: rgb(48, 47, 47);
         }
-
+        
         .herbs>div:hover {
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
@@ -285,17 +297,19 @@
 </head>
 
 <body>
+    <div id="bakckground">
     <div id="navbar">
         <div id="leftnav">
             <div><img src="https://www.1mg.com/images/tata_1mg_logo.svg" alt=""></div>
         </div>
         <div id="midnav">
-            <div><a href="/labtest.html"></a>MEDICINES</div>
-            <div>LAB TESTS</div>
-            <div>CONSULT DOCTORS</div>
-            <div>COVID-19</div>
-            <div>AYURVEDA</div>
-            <div>CARE PLAN <p>save more</p>
+            <div><a href="/1mg_team/landing_page/front_page.html">MEDICINES</a></div>
+            <div><a href="/1mg_team/leb_tests/labtest.html">Lab Tests</a></div>
+            <div><a href="/1mg_team/consultdoctor.html">Consult Doctors</a></div>
+            <div><a href="/1mg_team/covid19.html">COVID-19</a></div>
+            <div><a href="/1mg_team/ayurveda.html">AYURVEDA</a></div>
+            <div><a href="/1mg_team/care_plan/careplain.html">CARE PLAN</a>
+                <p>save more</p>
             </div>
         </div>
         <div id="rightnav">
@@ -435,7 +449,7 @@
         </select>
     </div>
     <hr>
-
+    </div>
     <!-- body content -->
     <img src="https://onemg.gumlet.io/image/upload/v1625061044/marketing/bjlo9q3qyxkh7bkhypiz.png">
 

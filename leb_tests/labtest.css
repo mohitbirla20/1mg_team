@@ -11,10 +11,18 @@
     text-align: center;
     font-weight: bold;
 }
+#midnav>div>a{
+    text-decoration: none;
+     color: black;
+  }
+  #midnav>div>a:hover{
+    color: #ff6f61;
+  }
 #midnav{
     display: grid;
     grid-template-columns: repeat(6,1fr);
     width: 50%;
+    height: 60px;
     margin: auto;
     align-items: center;
     justify-content: center;

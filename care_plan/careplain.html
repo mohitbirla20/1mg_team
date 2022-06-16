@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Care Plan</title>
    <style>
     * {
     margin: 0;
     padding: 0;
 }
-
+#background{
+  background-color: #F1F4F6;
+}
 /* navbar style */
 #navbar{
     display: flex;
@@ -19,10 +21,18 @@
     text-align: center;
     font-weight: bold;
 }
+#midnav>div>a{
+  text-decoration: none;
+   color: black;
+}
+#midnav>div>a:hover{
+  color: #ff6f61;
+}
 #midnav{
     display: grid;
     grid-template-columns: repeat(6,1fr);
     width: 50%;
+    height: 60px;
     margin: auto;
     align-items: center;
     justify-content: center;
@@ -248,10 +258,10 @@ grid-template-rows: auto;
     /* border: 1px solid yellow; */
 
 }
-.child1{
+/* .child1{
     /* font-size: 45px; */
     /* border: 1px solid yellow; */
-}
+
 .child1_h3{
     margin-top: 0;
     margin-bottom: 0;
@@ -310,9 +320,9 @@ grid-template-rows: auto;
   margin: auto;
   margin-top: 40px;
 }
-#cont>div{
+/* #cont>div{
   /* border: 2px solid; */
-}
+
 .last{
   /* border: 1px solid green; */
   margin-top: 60px;
@@ -458,18 +468,19 @@ margin-bottom: 20px;
   
 </head>
 <body>
+  <div id="background">
   <div id="navbar">
     <div id="leftnav">
         <div><img src="https://www.1mg.com/images/tata_1mg_logo.svg" alt=""></div>
     </div>
     <div id="midnav">
-        <div><a href="/labtest.html"></a>MEDICINES</div>
-        <div>LAB TESTS</div>
-        <div>CONSULT DOCTERS</div>
-        <div>COVID-19</div>
-        <div>AYRVEDA</div>
-        <div>CARE PLAN <p>save more</p>
-        </div>
+      <div><a href="/1mg_team/landing_page/front_page.html">MEDICINES</a></div>
+            <div><a href="/1mg_team/leb_tests/labtest.html">Lab Tests</a></div>
+            <div><a href="/1mg_team/consultdoctor.html">Consult Doctors</a></div>
+            <div><a href="/1mg_team/covid19.html">COVID-19</a></div>
+            <div><a href="/1mg_team/ayurveda.html">AYURVEDA</a></div>
+            <div><a href="/1mg_team/care_plan/careplain.html">CARE PLAN</a><p>save more</p>
+            </div>
     </div>
     <div id="rightnav">
         <div>Login</div>
@@ -608,6 +619,12 @@ margin-bottom: 20px;
   </select>
 </div>
 <hr>
+  </div>
+
+
+
+
+
      <div id="main"> 
         <div>
             <div>
