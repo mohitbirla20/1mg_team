@@ -105,7 +105,7 @@
                     <hr style="border: 1px solid red; background-color: red;"></div>
             
             
-            <button >LOGIN</button></div>
+            <button onclick="loginFun()">LOGIN</button></div>
             <p id="p2" style="text-align: center">New on 1mg?  ? <a href="signUp.html">Sign Up</a> </p>
             <p style="text-align: center; color: #616161;">By logging up, you agree to our
                 Terms and Conditions & Privacy Policy</p>
@@ -114,3 +114,21 @@
     </div>
 </body>
 </html>
+
+<script>
+    let dataFrmLs=JSON.parse(localStorage.getItem("userData"))||[];
+
+    function loginFun(dataFrmLs){
+        let email=document.querySelector("#email").value;
+        let pass=document.querySelector("#pass").value;
+        dataFrmLs.forEach(function(elem){
+            if(email==elem.uEmail && pass==elem.uPassword){
+                alert("login successfull");
+            }else{
+                alert("Invalid Email and Password")
+            }
+        })
+
+    }
+    
+</script>
