@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+    <style>
+        body{
+            background-color: #565656; 
+            font-family: Clear Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+          
+        }
+        #container{
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            background-color: white;
+            margin-top: 30px;
+            border-radius: 10px;
+            
+        }
+        #container>div{
+            
+            padding: 20px;
+        }
+        input{
+            display: block;
+            margin-bottom: 25px;
+            width: 80%;
+            height: 40px;
+            font-size: 20px;
+            padding: 0;
+         
+            border: 0;
+            outline: 0;
+           
+          
+        }
+        button{
+            display: block;
+            margin-left: 185px;
+            width: 50%;
+            height: 40px;
+            background-color: #ff6f61;
+            color: white;
+            border: 0;
+            border-radius: 10px;
+            font-size: 20px;
+
+        }
+        h2{
+            color:#ff6f61; ;
+        }
+        button:hover{
+            color: red;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        input:hover{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+       
+       
+       
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <h2>Address</h2>
+           <input id="house" type="number" placeholder="House No.">
+           <input id="lane" type="number" placeholder="Lane No.">
+           <input id="local" type="text" placeholder="Locality">
+            <input id="land" type="text" placeholder="Near by Landmark">
+            <input id="city" type="text" placeholder="City">
+            <input id="dist" type="text" placeholder="District">
+            <input id="state" type="text" placeholder="State">
+            <input id="pin" type="number" placeholder="Pincode">
+            <button onclick="myFunction()">Save Address</button>
+        </div>
+        <div>
+            <h2>Saved Address</h2>
+            <div id="add"></div>
+            <button onclick="myFunction2()">Continue</button>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+
+    function myFunction(){
+       
+        let house=document.querySelector("#house").value;
+        let lane=document.querySelector("#lane").value;
+        let local=document.querySelector("#local").value;
+        let land=document.querySelector("#land").value;
+        let city=document.querySelector("#city").value;
+        let dist=document.querySelector("#dist").value;
+        let state=document.querySelector("#state").value;
+        let pin=document.querySelector("#pin").value;
+
+        
+        let line1=document.createElement("h3");
+        line1.innerText="House No.: "+house+", "+"Lane No.: "+lane+", "+local+", "
+        let line2=document.createElement("h3");
+        line2.innerText=land+", "+city+", "+dist+", ";
+        let line3=document.createElement("h3");
+        line3.innerText=state+", "+pin+". ";
+       
+      
+       
+        document.querySelector("#add").append(line1,line2,line3);
+    }
+
+function myFunction2(){
+    window.location.href="payment1.html"
+}
+
+</script>
